@@ -88,9 +88,6 @@ i {
 }
 
 @media only screen and (min-width: 600px) {
-  *{
-    border: 2px solid white;
-  }
   body {
     background: url("./images/bg-desktop.svg");
     background-color: var(--violet);
@@ -122,7 +119,7 @@ i {
   .icons {
     position: absolute;
     bottom: 10px;
-    right: 52px;
+    right: 50px;
   }
   button {
     padding: 15px 30px;
