@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary colors */
+  --violet: hsl(257, 40%, 49%);
+  --soft-Magenta: hsl(300, 69%, 71%);
+  /* font family */
+  --poppins: 'Poppins';
+  --sans: 'Open Sans';
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+body {
+  padding: 1.875rem;
+  background: url("./images/bg-mobile.svg") no-repeat;
+  background-color: var(--violet);
+
+}
+.container img:nth-child(1) {
+  width: 40%;
+  align-self: flex-start;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-family: var(--poppins);
+  font-size: 28px;
+}
+
+.page-description {
+  text-align: center;
+  gap: 25px;
+  /* align-items: unset; */
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  font-family: var(--sans);
+}
+
+button {
+  background: white;
+  color: var(--violet);
+  padding: 20px;
+  width: 80%;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: all .125s;
+}
+
+button:hover {
+  background: var(--violet);
+  color: white;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+}
+
+i {
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 100%;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  *{
+    border: 2px solid white;
+  }
+  body {
+    background: url("./images/bg-desktop.svg");
+    background-color: var(--violet);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    flex-direction: unset;
+    margin: 100px auto;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1300px;
+  }
+  .images {
+    max-width: 700px;
+  }
+  .description {
+    align-items: center;
+    max-width: 470px;
+  }
+  .page-description{
+    text-align: left;
+    align-items: flex-start;
+  }
+  button {
+    width: 40%;
+  }
+  .icons {
+    position: absolute;
+    bottom: 10px;
+    right: 52px;
+  }
+  button {
+    padding: 15px 30px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  p{
+    font-size: 18px;
+  }
+}
