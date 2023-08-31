@@ -14,7 +14,9 @@
   --poppins: 'Poppins';
   --sans: 'Open Sans';
 }
-
+.positioning{
+  position: relative;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -76,6 +78,7 @@ button:hover {
 .icons {
   display: flex;
   gap: 30px;
+  cursor: pointer;
 }
 
 i {
@@ -97,7 +100,7 @@ i {
 
   .container {
     flex-direction: unset;
-    margin: 100px auto;
+    margin: 100px auto 50px;
     justify-content: space-evenly;
     align-items: center;
     max-width: 1300px;
@@ -118,8 +121,8 @@ i {
   }
   .icons {
     position: absolute;
-    bottom: 10px;
-    right: 50px;
+    bottom: -100px;
+    right: 0;
   }
   button {
     padding: 15px 30px;
@@ -129,5 +132,6 @@ i {
   }
   p{
     font-size: 18px;
+    line-height: 1.5;
   }
 }
